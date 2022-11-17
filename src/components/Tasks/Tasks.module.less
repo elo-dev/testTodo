@@ -1,0 +1,52 @@
+.task {
+  margin-top: 20px;
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 10px;
+  padding: 10px 5px;
+  &__completed {
+    border: 1px solid rgb(38, 189, 53);
+    filter: opacity(40%);
+  }
+  &__wrapper {
+    display: flex;
+    margin-bottom: 5px;
+  }
+  &__title {
+    font-weight: 600;
+    margin-left: 10px;
+  }
+  &__description {
+    margin-left: 25px;
+    margin-bottom: 5px;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+    &_wrapper {
+      display: flex;
+    }
+    p:not(:first-child) {
+      margin-left: 10px;
+    }
+  }
+  &__edit,
+  &__remove {
+    margin-left: 10px;
+    padding: 2px 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  &__edit {
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+  &__remove {
+    &:hover {
+      background-color: rgba(255, 0, 0, 0.5);
+    }
+  }
+}
